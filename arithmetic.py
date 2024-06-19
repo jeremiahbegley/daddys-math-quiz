@@ -165,12 +165,12 @@ while True:
         print(f'\n\nTime\'s up! You got {num_correct} questions right and {num_incorrect} wrong - that\'s {int(100*(round(num_correct/(num_correct+num_incorrect),2)))}%!')
 
     else:
-            print('\nThis is CHOMMY MODE. Press ENTER to begin.')
+            print('\nThis is SUBTRACTION - CHOMMY MODE (5). Press ENTER to begin.')
             input()
             timeout = time.time() + timer
             #this loop provides questions until time expires:
             while time.time() < timeout:
-                if addition(9):
+                if subtraction(5):
                     num_correct += 1
                 else:
                     num_incorrect += 1
